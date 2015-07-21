@@ -79,12 +79,6 @@ nav li a {
   width: 50%;
 }
 
-.content .block p {
-  padding: 5px;
-  border-bottom: 1px dashed #555;
-  margin: 0;
-}
-
 .content .block .hl {
   text-shadow: 1px 1px #FF9F01;
   text-align: center;
