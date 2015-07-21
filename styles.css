@@ -17,6 +17,7 @@ body {
 }
 
 .main-header h1 {
+  text-shadow: 1px 3px #F46246;
   font-weight: 700;
   margin: 5px;
 }
