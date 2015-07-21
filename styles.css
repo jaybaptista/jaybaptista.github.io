@@ -56,9 +56,7 @@ nav li a {
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
+  display: block;
 }
 
 .content .block {
