@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+  font-family: 'Lato';
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+.main-header {
+  color: #222;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  width: 30%;
+  border-bottom: 1px solid #777;
+}
+
+.main-header h1 {
+  font-weight: 700;
+  margin: 5px;
+}
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+  border-bottom: 1px solid #777; height:
+}
+
+nav li {
+  margin: 15px 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li:nth-child(1):hover {
+  text-shadow: 2px 2px #14DBE1;
+  transition: .3s;
+}
+
+nav li:nth-child(2):hover {
+  text-shadow: 2px 2px #FF9F01;
+  transition: .3s;
+}
+
+nav li:nth-child(3):hover {
+  text-shadow: 2px 2px #F46246;
+  transition: .3s;
+}
+
+nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.content .block {
+  background-color: #FFF;
+  width: 30%;
+  box-shadow: 2px 2px solid #555;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.content .block h2 {
+  text-shadow: 2px 2px #14DBE1;
+  font-size: 28px;
+  margin: 0 auto 5px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+
+.content .block h2 span {
+  width: 50%;
+}
+
+.content .block p {
+  padding: 5px;
+  border-bottom: 1px dashed #555;
+  margin: 0;
+}
+
+.content .block .hl {
+  text-shadow: 1px 1px #FF9F01;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+/* Graceful Responsive-ness :) */
+
+@media screen and (max-width: 640px) {
+  .main-header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 10px;
+  }
+
+  nav li:nth-child(1) {
+    background-color: #14DBE1;
+  }
+
+  nav li:nth-child(2) {
+    background-color: #FF9F01;
+  }
+
+  nav li:nth-child(3) {
+    background-color: #F46246;
+  }
+
+  nav li *:hover {
+    text-shadow: 2px 2px #FFF;
+    transition: .3s;
+  }
+
+  nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+  }
+
+  .content .block {
+    width: 80%;
+  }
+}
