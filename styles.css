@@ -29,6 +29,7 @@ nav {
 
 nav li {
   margin: 15px 0;
+  list-style: none;
   text-align: center;
 }
 
