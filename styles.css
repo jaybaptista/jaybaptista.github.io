@@ -27,12 +27,7 @@ nav {
   border-bottom: 1px solid #777; height:
 }
 
-nav ul {
-  list-style-type: none;
-  display: inline;
-}
-
-nav ul li {
+nav li {
   margin: 15px 0;
   text-align: center;
 }
@@ -52,7 +47,7 @@ nav li:nth-child(3):hover {
   transition: .3s;
 }
 
-nav ul li a {
+nav li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -111,11 +106,7 @@ nav ul li a {
     width: 100%;
   }
 
-  nav ul {
-    display: inline-block;
-  }
-
-  nav ul li {
+  nav li {
     margin: 0;
     padding: 10px;
   }
@@ -132,12 +123,12 @@ nav ul li a {
     background-color: #F46246;
   }
 
-  nav ul li *:hover {
+  nav li *:hover {
     text-shadow: 2px 2px #FFF;
     transition: .3s;
   }
 
-  nav ul li a {
+  nav li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
