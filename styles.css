@@ -27,9 +27,13 @@ nav {
   border-bottom: 1px solid #777; height:
 }
 
-nav li {
-  margin: 15px 0;
+nav ul {
+  list-style-type: none;
   display: inline;
+}
+
+nav ul li {
+  margin: 15px 0;
   text-align: center;
 }
 
@@ -48,7 +52,7 @@ nav li:nth-child(3):hover {
   transition: .3s;
 }
 
-nav li a {
+nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -107,7 +111,11 @@ nav li a {
     width: 100%;
   }
 
-  nav li {
+  nav ul {
+    display: inline-block;
+  }
+
+  nav ul li {
     margin: 0;
     padding: 10px;
   }
@@ -124,12 +132,12 @@ nav li a {
     background-color: #F46246;
   }
 
-  nav li *:hover {
+  nav ul li *:hover {
     text-shadow: 2px 2px #FFF;
     transition: .3s;
   }
 
-  nav li a {
+  nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
