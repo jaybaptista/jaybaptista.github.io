@@ -91,7 +91,7 @@ body {
         .content .block .b-up a:after {
           content: ' >'; }
         .content .block .b-up a:hover {
-          text-shadow: 2px 2px #2196F3;
+          text-shadow: 2px 2px #14DBE1;
           -webkit-transition: .2s;
           transition: .2s; }
     .content .block .b-h:hover {
