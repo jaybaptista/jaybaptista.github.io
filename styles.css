@@ -88,8 +88,8 @@ body {
         text-decoration: none;
         color: #FFF; }
         .content .block .b-up a .shadow:hover {
-          -webkit-filter: drop-shadow(2px 2px #2196F3);
-          filter: drop-shadow(2px 2px #2196F3);
+          -webkit-filter: drop-shadow(2px 2px #FFF);
+          filter: drop-shadow(2px 2px #FFF);
           transition: .2s; }
         .content .block .b-up a:hover {
           text-shadow: 2px 2px #14DBE1;

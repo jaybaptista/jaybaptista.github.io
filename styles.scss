@@ -102,8 +102,8 @@ body {
       a {
         .shadow {
           &:hover {
-          -webkit-filter: drop-shadow( 2px 2px $mblue );
-          filter: drop-shadow( 2px 2px $mblue );
+          -webkit-filter: drop-shadow( 2px 2px #FFF );
+          filter: drop-shadow( 2px 2px #FFF );
           transition: .2s;
         }
         }
