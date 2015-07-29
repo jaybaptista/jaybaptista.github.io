@@ -13,6 +13,7 @@ body {
 }
 
 .main-header {
+  box-shadow: 0px 1px $blue;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -92,21 +93,22 @@ body {
     }
     .b-up {
       color: #FFF;
-      background-color: $gray;
+      background-color: $blue;
       font-size: 30px;
       padding-top: 30px;
       padding-bottom: 30px;
       text-align: center;
       font-weight: 700;
       a {
+        .shadow {
+          &:hover {
+          -webkit-filter: drop-shadow( 2px 2px $mblue );
+          filter: drop-shadow( 2px 2px $mblue );
+          transition: .2s;
+        }
+        }
         text-decoration: none;
         color: #FFF;
-        &:before {
-          content: '< ';
-        }
-        &:after {
-          content: ' >';
-        }
         &:hover {
           text-shadow: 2px 2px $blue;;
           -webkit-transition: .2s;;
@@ -114,13 +116,7 @@ body {
         }
       }
     }
-    .b-h {
-      &:hover {
-        background-color: $blue;
-        -webkit-transition: .2s;
-                transition: .2s;
-      }
-    }
+
     .blue {
       background-color: $blue !important;
     }
@@ -132,6 +128,10 @@ body {
     }
     .red {
       background-color: $red !important;
+    }
+    .gray {
+      background-color: $gray !important;
+      color: $blue !important;
     }
   }
 }
