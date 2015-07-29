@@ -21,10 +21,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   color: #333;
-  height: 15%;
   width: 80%;
   margin: 0 auto;
-  padding-top: 1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
   border-bottom: 1px solid #333; }
   .main-header h1 {
