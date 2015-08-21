@@ -1,0 +1,129 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Art Build.</title>
+  <link rel="icon" type="image/ico" href="j.ico">
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Mono:400,500);
+    @import url(http://fonts.googleapis.com/css?family=Karla:400,700,700italic,400italic);
+    body {
+      background-color: #FFF;
+      color: #333;
+      font-family: Karla;
+      margin: 50px auto;
+      width: 60%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      font-weight: bold;
+      color: #037AFF;
+    }
+
+    a {
+      text-decoration: none;
+      color: #037AFF;
+    }
+
+    b {
+      color: #037AFF;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    #button {
+      display: inline-block;
+      border: 1px solid #037AFF;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px auto;
+    }
+
+    #button:hover {
+      background-color: #DDD;
+      transition: .2s;
+    }
+
+    #box {
+      font-family: Roboto Mono;
+      color: #FFF;
+      background-color: #2F91FF;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <h1><a href="#">Pocketwatch Games</a></h1>
+    <h2> ART BUILD ENGINE PRO </h2>
+    <p>Art Building, redefined.</p>
+  </div>
+  <h3>The Idea.</h3>
+  <p> Here at PWG, we believe in a world without bugs. Compromise is what we promise to forgive in this world, but sometimes it needs to change. Change, visually. Our art build generator is built on the same advanced algorithm technology our verification
+    suggestion engine is built upon. </p>
+  <h3>Advancements.</h3>
+  <p> Our new suggestion engine is now retrofitted for art building. It now includes
+    <b>scalable, gluten-free, eco friendly, organic, disruptive, enterprise, modular,
+    cross platform, ES6 compatible, coffee friendly, user friendly, cloud based, LGBT,
+    device agnostic, shoelace sockstrap, shoe velcrostrap, boilerstrap, XSS proof,
+    bullet proof, shark proof, laser proof, kitten proof, deez nuts got eem proof,
+    yung venuz verified, JavaScript modules.
+  </b>
+    <p>
+      All for the low price of $50 on our <a href="goteem.html">Kickstarter</a> page.
+    </p>
+    <div class="generator center">
+      <a href="#" id="button">Generate Art Build Experience</a>
+      <div id="box">#ArtBuilding</div>
+    </div>
+    <script>
+      var box = document.getElementById("box");
+      var btn = document.getElementById("button");
+      var nouns = [
+        "Rats", "Animals", "Squirrels", "Moles", "Machine Guns", "Explosives",
+        "Grass", "Trees", "Monaco", "Tooth And Tail", "Melee Weapons", "Swords",
+        "Obama", "Guns", "Water", "Logo", "Branding", "Blood", "Bodily Fluids",
+        "Trading Cards", "Sky", "Clouds", "Fire"
+      ];
+      var connector = [
+        "now look like", "appear to be", "changed to look like", "revised to look like", "edited to be",
+        "photoshopped to look like"
+      ];
+      var adj = [
+        "anthropomorphic animals", "chocolate bars", "the Greek economy", "the bugs of Monaco", "the Redhead",
+        "the Mole", "Andy Nguyen", "Andy Schatz", "Alex", "Brian", "sinks", "bags", "it's real counterparts",
+        "my GPA", "an SSD", "the Chrysler Building", "Abe Lincoln's beard", "iPhone 7", "Galaxy Edge Note S Plus",
+        "a sack", "mono", "consumption", "contaminated", "ERROR 404", "bad interpreter", "no homo", "less sexual",
+        "more sexual", "aesthetically pleasing", "aesthetically displeasing", "andy fixing Monaco", "ebola",
+        "Hillary Clinton", "Donald Trump", "Jeb Bush", "Crotchbot", "Nuclear Throne", "Yung Venuz"
+      ];
+      function randomNoun() {
+        return nouns[Math.floor(Math.random() * nouns.length)];
+      }
+      function randomConnector() {
+        return  connector[Math.floor(Math.random() * connector.length)];
+      }
+      function randomAdj() {
+        return  adj[Math.floor(Math.random() * adj.length)];;
+      }
+
+      function equalNone() {
+        box.innerHTML = "";
+      }
+      function randomize() {
+        box.innerHTML = "";
+        box.innerHTML = randomNoun() + " " + randomConnector() + " " + randomAdj() + ".";
+      }
+
+      btn.addEventListener("click", randomize, false);
+    </script>
+</body>
