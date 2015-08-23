@@ -27,7 +27,8 @@
     .white h1 a:hover {
       color: #F6F6F6 !important;
       background-color: #383F4A !important;
-      transition: .2s; }
+      -webkit-transition: .2s;
+              transition: .2s; }
 
 body {
   background-color: #F0F0F0;
@@ -36,8 +37,14 @@ body {
   font-family: Karla, sans-serif; }
 
 nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 h1 {
   font-size: 2rem; }
@@ -46,9 +53,17 @@ h1 {
   margin-top: 10%;
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .block-hold .info {
     line-height: 1.5;
     overflow: scroll;
@@ -61,7 +76,8 @@ h1 {
         padding: 0 10px; }
         .block-hold .info h1 a:hover, .block-hold .info p a:hover, .block-hold .info nav a:hover {
           color: #50E3C2;
-          transition: .2s; }
+          -webkit-transition: .2s;
+                  transition: .2s; }
   .block-hold .block {
     color: white;
     background-color: #037AFF;
@@ -76,14 +92,16 @@ h1 {
         .block-hold .block h1 a:hover {
           background-color: #F6F6F6;
           color: #383F4A;
-          transition: .2s; }
+          -webkit-transition: .2s;
+                  transition: .2s; }
     .block-hold .block p {
       margin: 30px; }
 
 @media screen and (max-width: 640px) {
   .blockhold {
-    justify-content: flex-start !important; }
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important; }
     .blockhold .block {
       width: 100% !important; } }
-
-/*# sourceMappingURL=main.css.map */
