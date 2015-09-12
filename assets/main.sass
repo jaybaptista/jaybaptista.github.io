@@ -36,7 +36,7 @@ body
 .flow
   display: flex
   flex-direction: row
-  justify-content: center
+  justify-content: space-around
   flex-wrap: wrap
   .block
     margin: 20px
@@ -47,16 +47,22 @@ body
     background-repeat: no-repeat
       transition: .2s
     &:hover
-      box-shadow: 3px 3px $leather
+      box-shadow: 5px 5px $leather
       transition: .2s
     // META
   #hunter
     background-image: url(huntress.jpeg)
   #meltdown
     background-image: url(horror.jpg)
+  #franken
+    background-image: url(FRANKENTURRET.jpg)
+  #turret
+    background-image: url(TURRET.jpg)
+  #yv
+    background-image: url(YV.jpg)
   #none
     background-color: #dedede
-@media screen and (max-width: 640px)
+@media screen and (max-width: 800px)
   .flow
     .block
       width: 400px
