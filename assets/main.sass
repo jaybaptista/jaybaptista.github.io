@@ -1,0 +1,63 @@
+@import 'color'
+@import 'block'
+@import 'page'
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700)
+
+body
+  background-color: $white
+  margin: 0
+  font-family: Karla, sans-serif
+
+.header
+  background-color: $butter
+  text-align: center
+  padding: 50px
+  color: $leather
+
+  h1
+    text-transform: uppercase
+    letter-spacing: 10px
+    margin-bottom: 10px
+
+  p
+    margin: 0
+
+  nav
+    margin: 20px auto 10px auto
+  a
+    text-decoration: none
+    margin: 10px 20px
+    font-weight: bold
+    color: $leather
+    &:hover
+      background-color: $white
+      transition: .2s
+
+.flow
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  .block
+    margin: 20px
+    display: block
+    width: 250px
+    height: 250px
+    background-size: cover
+    background-repeat: no-repeat
+      transition: .2s
+    &:hover
+      box-shadow: 3px 3px $leather
+      transition: .2s
+    // META
+  #hunter
+    background-image: url(huntress.jpeg)
+  #meltdown
+    background-image: url(horror.jpg)
+  #none
+    background-color: #dedede
+@media screen and (max-width: 640px)
+  .flow
+    .block
+      width: 400px
+      height: 400px
