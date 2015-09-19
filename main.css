@@ -1,6 +1,11 @@
 /*ITERATE*/
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic);
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 p {
   margin-bottom: 5px;
   text-align: center;
