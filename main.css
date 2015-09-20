@@ -22,22 +22,34 @@ header {
   padding: 20px;
   font-family: Karla, sans-serif;
   text-align: center;
-  color: #34495E;
+  color: #2E2E2E;
   letter-spacing: 5px;
   width: 50%;
-  border-bottom: 1px solid #34495E;
+  border-bottom: 1px solid #2E2E2E;
+}
+
+header h1 {
+  color: #50E3C2;
+  font-weight: bold;
 }
 
 header p {
-  margin: 30px;
+  margin: 20px;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #34495E;
-  margin: 20px auto;
+  color: #2E2E2E;
+  margin: 20px;
   letter-spacing: normal !important;
+}
+
+svg:hover {
+  -webkit-transition: .2s;
+          transition: .2s;
+  -webkit-filter: drop-shadow( 3px 3px 0 #50E3C2 );
+  filter: drop-shadow( 3px 3px 0 #50E3C2 );
 }
 
 .wrap {
