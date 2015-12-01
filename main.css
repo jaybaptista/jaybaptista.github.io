@@ -1,85 +1,22 @@
-/*ITERATE*/
-@import url(https://fonts.googleapis.com/css?family=Product+Sans);
-img {
-  width: 100%;
-  height: auto;
-}
-
-p {
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-body {
-  background-color: #F0F0F0;
-  margin: 50px auto;
-  font-family: Product Sans, sans-serif;
-}
-
-header {
-  margin: 50px auto;
-  padding: 20px;
-  font-family: Product Sans, sans-serif;
-  text-align: center;
-  color: #2E2E2E;
-  letter-spacing: 5px;
-  width: 50%;
-  border-bottom: 1px solid #2E2E2E;
-}
-
-header h1 {
-  color: #333;
-  font-weight: bold;
-}
-
-header p {
-  margin: 20px;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:900,400,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
 a {
   text-decoration: none;
-  font-weight: bold;
-  color: #2E2E2E;
-  margin: 20px;
-  letter-spacing: normal !important;
-}
+  color: #000; }
+  a:hover {
+    color: #00E8B4; }
 
-svg:hover {
-  -webkit-transition: .2s;
-          transition: .2s;
-  -webkit-filter: drop-shadow( 3px 3px 0 #50E3C2 );
-  filter: drop-shadow( 3px 3px 0 #50E3C2 );
-}
+body {
+  background-color: #f0f0f0; }
 
-.wrap {
-  margin: 10px auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 80%;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-.block {
-  background-color: #FFF;
-  margin: 10px;
-  border: 10px solid #FFF;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05)
-}
+header {
+  font-family: Maven Pro;
+  text-align: center; }
 
-.block img {
-  margin: 0 auto;
-  display: block;
-}
+h1 {
+  width: 640px;
+  margin: 10vh auto 10vh auto;
+  font-size: 2rem;
+  font-weight: 400; }
 
-@media screen and (max-width: 800px) {
-  header {
-    width: 80%;
-  }
-}
+/*# sourceMappingURL=main.css.map */
