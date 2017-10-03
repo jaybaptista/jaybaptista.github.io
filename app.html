@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="app.css"/>
+</head>
+<title>ParseFX Calc</title>
+<body>
+  <div id="leftpane">
+    <script src="https://raw.githubusercontent.com/jaylmao/p5_visual/master/dependencies/three.js"></script>
+    <script src="https://raw.githubusercontent.com/jaylmao/p5_visual/master/dependencies/OrbitControls.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/jaylmao/p5_visual/master/parseFX/parsefx-1.0.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/jaylmao/p5_visual/master/build/app.js"></script>
+    <h1 class="header">CALCULATOR <a href="https://github.com/jaylmao/p5_visual">3D</a></h1>
+
+    <div class="field">
+      <div class="init">f(x, y) =</div>
+      <div class="box">
+        <p class="fxin"> </p>
+      </div>
+    </div>
+
+    <div class="set1">
+      <div class="s yellow k" id="c">C</div>
+      <div class="s lred k" id="x">X</div>
+      <div class="s lred k" id="y">Y</div>
+      <div class="s grn k" id="car">^</div>
+      <div class="s orn k" id="sin">sin</div>
+      <div class="s orn k" id="cos">cos</div>
+      <div class="s grn k" id="log">log</div>
+      <div class="s grn k" id="ln">ln</div>
+      <div class="s grn k" id="e">e</div>
+      <div class="s orn k" id="pi">π</div>
+      <div class="s orn k" id="tan">tan</div>
+      <div class="s red k" id="del">del</div>
+      <div class="op">
+        <div class="s b k" id="plus">+</div>
+        <div class="s b k" id="min">-</div>
+        <div class="s b k" id="mult">•</div>
+        <div class="s b k" id="divi">÷</div>
+        <div class="s b k" id="parO">(</div>
+        <div class="s b k" id="parC">)</div>
+      </div>
+    </div>
+
+    <div class="set2">
+      <div class="s grn k" id="1">1</div>
+      <div class="s grn k" id="2">2</div>
+      <div class="s grn k" id="3">3</div>
+      <div class="s grn k" id="4">4</div>
+      <div class="s grn k" id="5">5</div>
+      <div class="s grn k" id="6">6</div>
+      <div class="s grn k" id="7">7</div>
+      <div class="s grn k" id="8">8</div>
+      <div class="s grn k" id="9">9</div>
+      <div class="s grn k" id="0">0</div>
+      <div class="s grn k" id="spc">__</div>
+      <div class="calcOp">
+      <div class="s or k" id="dy">dy</div>
+      <div class="s or k" id="dx">dx</div>
+      <div class="s or k" id="ifx">F(x)</div>
+      <div class="s or k" id="ify">F(y)</div>
+      <div class="s or k sel" id="fx">f(x,y)</div>
+    </div>
+    </div>
+
+    <div class="set3">
+      <div class="s mag k selCol" id="magenta">M</div>
+      <div class="s purp k" id="purple">P</div>
+      <div class="s yellow k" id="yellow">Y</div>
+      <div class="s lor k" id="orange">O</div>
+    </br>
+      <div class="s b k graph" id="points">PLOT</div>
+      <div class="s b k selMat graph" id="lines">CONT</div>
+      <div class="graph k" id="go">GRAPH</div>
+      Viewfinder Dim. </br>
+      X<input type="text" id="dimX"></input>
+      Y<input type="text" id="dimY"></input>
+      Z<input type="text" id="dimZ"></input>
+      Scale<input type="text" id="scaleFac"></input>
+      Evaluation Context<br>
+      X: <input type="text" id="inX"></input>
+      Y: <input type="text" id="inY"></input>
+      <div class="graph k" id="eval">EVALUATE</div>
+    </div>
+  </div>
+  <div class="hidden">
+  </div>
+
+</body>
+</html>
