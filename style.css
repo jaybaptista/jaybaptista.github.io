@@ -62,6 +62,7 @@ a:hover {
   margin: 20px;
   width: 300px;
   padding: 20px;
+  
 }
 
 .img .caption {
@@ -69,11 +70,12 @@ a:hover {
   border-bottom: 1px solid #5FB49C;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   .long-form-body {
   margin: 1em 2em;
 }
   body {
+    font-size: 18px;
     padding: .5em;
     line-height: 2.0em;
   }
