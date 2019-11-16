@@ -52,16 +52,6 @@ a:hover {
   padding: 10px 0px;
 }
 
-@media screen and (max-width: 640px) {
-  .long-form-body {
-  margin: 1em 2em;
-}
-  body {
-    padding: .5em;
-    line-height: 2.0em;
-  }
-}
-
 .floatlist {
    display: flex;
    flex-direction: row;
@@ -77,3 +67,14 @@ a:hover {
   padding: 10px;
   border-bottom: 1px solid #5FB49C;
 }
+
+@media screen and (max-width: 640px) {
+  .long-form-body {
+  margin: 1em 2em;
+}
+  body {
+    padding: .5em;
+    line-height: 2.0em;
+  }
+}
+
