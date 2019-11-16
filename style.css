@@ -61,3 +61,19 @@ a:hover {
     line-height: 2.0em;
   }
 }
+
+.floatlist {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.img {
+  margin: 20px;
+  width: 300px;
+  padding: 20px;
+}
+
+.img .caption {
+  padding: 10px;
+  border-bottom: 1px solid #5FB49C;
+}
