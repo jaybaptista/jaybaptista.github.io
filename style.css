@@ -24,7 +24,7 @@ body {
   color: -internal-root-color;
   margin: 10px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
+  font-size: 18px;
   padding: 2em;
   font-style: italic;
   letter-spacing: 0.1em;
@@ -50,6 +50,7 @@ a:hover {
 .item {
   margin: 10px 0px 10px 0;
   padding: 10px 0px;
+  width: 75%;
 }
 
 .floatlist {
@@ -59,10 +60,9 @@ a:hover {
 }
 
 .img {
-  margin: 20px;
+  margin: 5px;
   width: 300px;
   padding: 20px;
-  
 }
 
 .img .caption {
@@ -70,12 +70,11 @@ a:hover {
   border-bottom: 1px solid #5FB49C;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .long-form-body {
   margin: 1em 2em;
 }
   body {
-    font-size: 18px;
     padding: .5em;
     line-height: 2.0em;
   }
