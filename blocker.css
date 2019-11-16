@@ -1,8 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+:root {
+  --white: #F4FFFD;
+  --navy: #011936;
+  --red: #ED254E;
+  --gray: #465362;
+  --yellow: #F9DC5C;
+}
+
 body {
-  background-color: #50E3C2;
-  color: white;
+  background-color: --white;
+  color: --navy;
+  text-shadow: --red;
   margin: 40vh auto 0 auto;
-  font-family: 'Montserrat';
+  font-family: 'Raleway';
   text-align: center;
 }
