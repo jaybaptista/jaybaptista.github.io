@@ -14,7 +14,7 @@ html {
 }
 
 .bullet::before {
-    content: "*";
+    content: "*  ";
     color: #414288;
 }
 
