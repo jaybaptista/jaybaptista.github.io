@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i&display=swap');
-
 html {
   box-sizing: border-box;
 }
@@ -13,13 +12,13 @@ html {
 }
 
 .bullet::before {
-    content: "*  ";
-    color: #414288;
+  content: "*  ";
+  color: #00909e;
 }
 
-
 body {
-  background-color: white;
+  width: 65%;
+  background-color: #1b1b2f;
   color: -internal-root-color;
   margin: 10px;
   font-family: 'IBM Plex Mono', monospace;
@@ -28,18 +27,21 @@ body {
   font-style: italic;
   letter-spacing: 0.1em;
   line-height: 1.6em;
+  color: #dae1e7;
 }
-
 
 .header {
- color: #414288;
- text-shadow: .05em .05em #5FB49C;
- font-size: 24px;
- margin: 10px 0px 0px 0px;
+  color: #00909e;
+  text-shadow: .05em .05em #5FB49C;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0px 0px 0px;
 }
+
 a {
-  color: #414288;
+  color: #00909e;
 }
+
 a:hover {
   background-color: #5FB49C;
   transition: 0.2s;
@@ -53,9 +55,9 @@ a:hover {
 }
 
 .floatlist {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .img {
@@ -71,16 +73,14 @@ a:hover {
 
 @media screen and (max-width: 900px) {
   .long-form-body {
-  margin: 1em 2em;
-}
+    margin: 1em 2em;
+  }
   body {
     font-size: 24px;
     padding: .5em;
     line-height: 2.0em;
   }
-
   .item {
     width: 95%;
   }
 }
-
