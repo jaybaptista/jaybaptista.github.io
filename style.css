@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i&display=swap');
+:root {
+  --bg-color: #eeecda;
+  --acc-1: #f08a5d;
+  --acc-2: #b83b5e;
+  --dark: #6a2c70;
+}
+
 html {
   box-sizing: border-box;
+}
+
+::selection {
+  color: var(--acc-1);
+  background: #393e46;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  color: var(--acc-1);
+  background: #393e46;
+  /* Gecko Browsers */
 }
 
 *, *:before, *:after {
@@ -13,13 +32,12 @@ html {
 
 .bullet::before {
   content: "*  ";
-  color: #00909e;
+  color: var(--acc-2);
 }
 
 body {
   width: 65%;
-  background-color: #1b1b2f;
-  color: -internal-root-color;
+  background-color: var(--bg-color);
   margin: 10px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
@@ -27,23 +45,23 @@ body {
   font-style: italic;
   letter-spacing: 0.1em;
   line-height: 1.6em;
-  color: #dae1e7;
+  color: var(--dark);
 }
 
 .header {
-  color: #00909e;
-  text-shadow: .05em .05em #5FB49C;
+  color: var(--dark);
+  text-shadow: .05em .05em var(--acc-2);
   font-weight: bold;
   font-size: 24px;
   margin: 10px 0px 0px 0px;
 }
 
 a {
-  color: #00909e;
+  color: var(--acc-1);
 }
 
 a:hover {
-  background-color: #5FB49C;
+  background-color: var(--dark);
   transition: 0.2s;
   color: white;
 }
@@ -68,7 +86,7 @@ a:hover {
 
 .img .caption {
   padding: 10px;
-  border-bottom: 1px solid #5FB49C;
+  border-bottom: 1px solid var(--dark);
 }
 
 @media screen and (max-width: 900px) {
