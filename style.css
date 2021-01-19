@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,300&display=swap');
 :root {
-  --bg-color: #222831;
-  --acc-1: #ffa931;
-  --acc-2: #fbd46d;
-  --dark: #EFEFEF;
+  --bg-color: white;
+  --acc-1: #FF8200;
+  --acc-2: #FFC100;
+  --dark: #0A0903;
 }
 
 html {
@@ -34,7 +34,7 @@ body {
   width: 65%;
   background-color: var(--bg-color);
   margin: 10px;
-  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Source Serif Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;
   padding: 2em;
   letter-spacing: 0.1em;
@@ -52,12 +52,19 @@ body {
 a {
   color: var(--acc-1);
   text-decoration: none;
+  font-style: normal;
 }
 
 a:hover {
   background-color: #FCD63C;
   transition: 0.2s;
-  color: var(--bg-color);
+  color: var(--dark);
+  font-style: italic;
+}
+
+.profile {
+  width: 500px;
+  padding: 30px;
 }
 
 .item {
@@ -70,12 +77,14 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
 .img {
   margin: 5px;
   width: 300px;
   padding: 20px;
+  /* border-radius: 50%; */
 }
 
 .img .caption {
@@ -84,13 +93,20 @@ a:hover {
 }
 
 .bullet {
+  display: flex;
   padding: 10px;
-  border-bottom: 1px solid var(--acc-1);
+  border-left: 1px solid var(--acc-1);
   width: 300px;
+  font-style: italic;
+}
+
+h2 {
+  font-style: italic;
 }
 
 @media screen and (max-width: 900px) {
   .long-form-body {
+    width: 100%;
     margin: 1em 2em;
   }
 
@@ -98,10 +114,14 @@ a:hover {
     font-size: 36px;
   }
 
+  .profile {
+    width: 100%;
+  }
+
   body {
-    font-size: 24px;
+    font-size: 18px;
     padding: .5em;
-    line-height: 2.0em;
+    line-height:2.0em;
   }
   .item {
     width: 95%;
