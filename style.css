@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 :root {
-  --bg-color: #03045e;
+  --bg-color: #F0EEE6;
 }
 
 body {
   width: 100%;
-  background-color: #4361ee;
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #F0EEE6;
+  font-family: 'Lora', Georgia, serif;
   font-size: 18px;
   line-height: 3.0em;
   letter-spacing: 0.1em;
-  color: white;
+  color: #141413;
 }
 
 html {
@@ -18,15 +18,13 @@ html {
 }
 
 ::selection {
-  color: white;
-  background: #4cc9f0;
-  /* WebKit/Blink Browsers */
+  color: #F0EEE6;
+  background: #141413;
 }
 
 ::-moz-selection {
-  color: white;
-  background: #4cc9f0;
-  /* Gecko Browsers */
+  color: #F0EEE6;
+  background: #141413;
 }
 
 *, *:before, *:after {
@@ -34,21 +32,25 @@ html {
 }
 
 .header {
-  font-weight: bold;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
   font-size: 96px;
   line-height: 1.0em;
 }
 
 a {
-  color: #4cc9f0;
+  color: #BF4D43;
   text-decoration: none;
   font-style: normal;
+  background: linear-gradient(#BF4D43, #BF4D43) no-repeat left center;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease, color 0.3s ease;
+  padding: 0 2px;
 }
 
 a:hover {
-  border-bottom: 1px solid white;
-  transition: 0.2s;
-  color: #FFF;
+  background-size: 100% 100%;
+  color: white;
 }
 
 .item {
@@ -73,11 +75,97 @@ a:hover {
   width: 100%;
 }
 
+.email-reveal {
+  color: #BF4D43;
+  cursor: default;
+}
+
+.email-colon {
+  overflow: hidden;
+  max-width: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  white-space: nowrap;
+  transition: max-width 0.2s ease;
+}
+
+.email-wrapper {
+  overflow: hidden;
+  max-width: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: max-width 0.4s ease;
+}
+
+.email-address {
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  background-color: #BF4D43;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  padding: 0 4px;
+}
+
+.email-reveal:hover .email-colon {
+  max-width: 3ch;
+}
+
+.email-reveal:hover .email-wrapper {
+  max-width: 30ch;
+}
+
+.email-mobile-reveal {
+  display: none;
+}
+
+@media screen and (max-width: 1079px) {
+  .email-reveal {
+    cursor: pointer;
+  }
+
+  .email-colon,
+  .email-wrapper {
+    display: none;
+  }
+
+  .email-mobile-reveal {
+    width: 100%;
+    padding-left: 2em;
+    font-size: 1.5em;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #BF4D43;
+    line-height: 2.5em;
+  }
+
+  .email-mobile-reveal:not(.visible) {
+    display: none;
+  }
+
+  .email-mobile-reveal.visible {
+    display: block;
+  }
+}
+
 .long-form-body {
   width: 75%;
   height: 800px;
   margin: 50px auto;
   padding: 100px 20px 20px 20px;
+}
+
+#points-canvas {
+  width: 320px;
+  height: 320px;
+  margin: 20px;
+}
+
+#points-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .profile {
@@ -88,11 +176,12 @@ a:hover {
   .long-form-body {
     width: 75%;
     margin: 10% auto;
-    background-color: #4361ee;
+    background-color: #F0EEE6;
     padding: 5% 5%;
   }
   .header {
-    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
     font-size: 36px;
   }
   .profile {
@@ -101,12 +190,12 @@ a:hover {
   }
   body {
     width: 100%;
-    background-color: #4361ee;
-    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #F0EEE6;
+    font-family: 'Lora', Georgia, serif;
     font-size: .8em;
     letter-spacing: 0.1em;
     line-height: 2em;
-    color: white;
+    color: #141413;
   }
   .item {
     margin: 10px 0px 10px 0;
